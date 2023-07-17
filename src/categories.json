@@ -1,0 +1,721 @@
+
+{
+  "CRM" : {
+    "category": "CRM",
+    "basePrice": 1500,
+    "parameters": [
+      {
+        "name": "Functionality",
+        "label": "with these modules:",
+        "options": [
+          {"name": "Sales Management", "price": 1000, "multiplier": 1.0},
+          {"name": "Customer Service", "price": 1000,  "multiplier": 1.0},
+          {"name": "Marketing Automation", "price": 1500,  "multiplier": 1.0},
+          {"name": "Analytics and Reporting", "price": 2000,  "multiplier": 1.0},
+          {"name": "Inventory Management", "price": 2000,  "multiplier": 1.0},
+          {"name": "Order Management", "price": 2500,  "multiplier": 1.0},
+          {"name": "Lead Management", "price": 1000,  "multiplier": 1.0},
+          {"name": "Email Integration", "price": 800,  "multiplier": 1.0},
+          {"name": "Document Management", "price": 1500,  "multiplier": 1.0},
+          {"name": "Task Management", "price": 3000,  "multiplier": 1.0},
+          {"name": "Custom Fields", "price": 3000,  "multiplier": 1.0},
+          {"name": "Workflow Automation", "price": 4500,  "multiplier": 1.0},
+          {"name": "Calendar and Scheduling", "price": 3500,  "multiplier": 1.0},
+          {"name": "Mobile Access", "price": 3000,  "multiplier": 1.0},
+          {"name": "Social Media Integration", "price": 4000,  "multiplier": 1.0},
+          {"name": "Lead Scoring", "price": 3500,  "multiplier": 1.0},
+          {"name": "Customer Segmentation", "price": 4000,  "multiplier": 1.0},
+          {"name": "Campaign Management", "price": 4500,  "multiplier": 1.0},
+          {"name": "Integration APIs", "price": 3000,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Number of Users",
+        "label": "for a team of",
+        "options": [
+          {"name": "1-5 people", "multiplier": 1.0},
+          {"name": "6-10 people", "multiplier": 1.2},
+          {"name": "11-20 people", "multiplier": 1.5},
+          {"name": "21-50 people", "multiplier": 1.8},
+          {"name": "51-100 people", "multiplier": 2.0},
+          {"name": "101+ people", "multiplier": 2.5}
+        ]
+      },
+      {
+        "name": "Integrations",
+        "label": "I also need these Integrations",
+        "options": [
+          {"name": "Accounting", "multiplier": 1.2},
+          {"name": "Banking", "multiplier": 1.1},
+          {"name": "Utilities", "multiplier": 1.1},
+          {"name": "Transport", "multiplier": 1.1},
+          {"name": "Email Marketing", "multiplier": 1.2},
+          {"name": "E-commerce", "multiplier": 1.2},
+          {"name": "Social Media", "multiplier": 1.1},
+          {"name": "Project Management", "multiplier": 1.1},
+          {"name": "None", "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Data Migration",
+        "label": "and Data Migration is",
+        "options": [
+          {"name": "Required", "multiplier": 1.2},
+          {"name": "Not Required", "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Industry",
+        "label": "in the industry of",
+        "options": [
+          {"name": "Entertainment", "multiplier": 1.1},
+          {"name": "Productivity", "multiplier": 1.0},
+          {"name": "Social Media", "multiplier": 1.1},
+          {"name": "E-commerce", "multiplier": 1.2},
+          {"name": "Service", "multiplier": 1.1},
+          {"name": "Product Management", "multiplier": 1.0},
+          {"name": "Education", "multiplier": 1.0},
+          {"name": "Healthcare", "multiplier": 1.1},
+          {"name": "Hospitality", "multiplier": 1.1},
+          {"name": "Finance", "multiplier": 1.2},
+          {"name": "Retail", "multiplier": 1.1},
+          {"name": "Manufacturing", "multiplier": 1.1},
+          {"name": "Technology", "multiplier": 1.0},
+          {"name": "Real Estate", "multiplier": 1.1},
+          {"name": "Construction", "multiplier": 1.1},
+          {"name": "Automotive", "multiplier": 1.1},
+          {"name": "Telecommunications", "multiplier": 1.0},
+          {"name": "Energy", "multiplier": 1.2},
+          {"name": "Transportation", "multiplier": 1.1},
+          {"name": "Government", "multiplier": 1.0},
+          {"name": "Non-profit", "multiplier": 1.0},
+          {"name": "Other", "multiplier": 1.0}
+        ]
+      }]
+    },
+
+   "E-commerce Store": {
+      "category": "E-commerce Store",
+      "basePrice": 25000,
+      "parameters": [
+        {
+          "name": "Features",
+          "label": "with these features:",
+          "options": [
+            {
+              "name": "Product Catalog Management",
+              "price": 6000,  "multiplier": 1.0
+            },
+            {
+              "name": "Shopping Cart and Checkout",
+              "price": 7000,  "multiplier": 1.0
+            },
+            {
+              "name": "Payment Gateway Integration",
+              "price": 5000,  "multiplier": 1.0
+            },
+            {
+              "name": "Order Management",
+              "price": 6000,  "multiplier": 1.0
+            },
+            {
+              "name": "Inventory Management",
+              "price": 5000,  "multiplier": 1.0
+            },
+            {
+              "name": "Customer Accounts",
+              "price": 4000,  "multiplier": 1.0
+            },
+            {
+              "name": "Shipping and Logistics Integration",
+              "price": 6000,  "multiplier": 1.0
+            },
+            {
+              "name": "Product Reviews and Ratings",
+              "price": 3000,  "multiplier": 1.0
+            },
+            {
+              "name": "Discounts and Coupons",
+              "price": 4000,  "multiplier": 1.0
+            },
+            {
+              "name": "Analytics and Reporting",
+              "price": 5000,  "multiplier": 1.0
+            }
+          ]
+        },
+        {
+          "name": "Number of Products",
+          "label": "for a number of around:",
+          "options": [
+            {"name": "1-100 products", "multiplier": 1.0},
+            {"name": "101-500 products", "multiplier": 1.2},
+            {"name": "501-1000 products", "multiplier": 1.5},
+            {"name": "1001-5000 products", "multiplier": 2.0},
+            {"name": "more than 5000 products", "multiplier": 2.5}
+          ]
+        },
+        {
+          "name": "Shipping Company",
+          "label": "for shipping and fullfilment",
+
+          "options": [
+            {"name": "I have my own fulfillment and processing solution", "price": 5000,  "multiplier": 1.0},
+            {"name": "I need help with fulfillment software", "price": 0,  "multiplier": 1.0}
+          ]
+        },
+        {
+          "name": "Payment Processor",
+          "label": "for payments",
+          "options": [
+            {"name": "We work with a payment processor", "price": 5000,  "multiplier": 1.0},
+            {"name": "We can use your recommendations for the payment processor", "price": 0,  "multiplier": 1.0}
+          ]
+        },
+        {
+          "name": "Industry",
+          "label": "In the Industry of",
+          "options": [
+            {"name": "Entertainment", "multiplier": 1.1},
+            {"name": "Productivity", "multiplier": 1.0},
+            {"name": "Social Media", "multiplier": 1.1},
+            {"name": "E-commerce", "multiplier": 1.2},
+            {"name": "Service", "multiplier": 1.1},
+            {"name": "Product Management", "multiplier": 1.0},
+            {"name": "Education", "multiplier": 1.0},
+            {"name": "Healthcare", "multiplier": 1.1},
+            {"name": "Hospitality", "multiplier": 1.1},
+            {"name": "Finance", "multiplier": 1.2},
+            {"name": "Retail", "multiplier": 1.1},
+            {"name": "Manufacturing", "multiplier": 1.1},
+            {"name": "Technology", "multiplier": 1.0},
+            {"name": "Real Estate", "multiplier": 1.1},
+            {"name": "Construction", "multiplier": 1.1},
+            {"name": "Automotive", "multiplier": 1.1},
+            {"name": "Telecommunications", "multiplier": 1.0},
+            {"name": "Energy", "multiplier": 1.2},
+            {"name": "Transportation", "multiplier": 1.1},
+            {"name": "Government", "multiplier": 1.0},
+            {"name": "Non-profit", "multiplier": 1.0},
+            {"name": "Other", "multiplier": 1.0}
+          ]
+        }
+      ]
+  }
+  ,
+
+    "ERP":  {
+        "category": "ERP",
+        "basePrice": 30000,
+        "parameters": [
+          {
+            "name": "Modules",
+            "label": "with these modules:",
+            "options": [
+              {"name": "Stock Management", "price": 5000,  "multiplier": 1.0},
+              {"name": "Customer Management", "price": 4000,  "multiplier": 1.0},
+              {"name": "Production", "price": 6000,  "multiplier": 1.0},
+              {"name": "Pricing", "price": 4000,  "multiplier": 1.0},
+              {"name": "Reports", "price": 3000,  "multiplier": 1.0},
+              {"name": "Purchasing", "price": 5000,  "multiplier": 1.0},
+              {"name": "Contracts", "price": 4000,  "multiplier": 1.0},
+              {"name": "Wholesale/Retail", "price": 4000,  "multiplier": 1.0},
+              {"name": "Inventory Management", "price": 4000,  "multiplier": 1.0},
+              {"name": "Routes and Fleets", "price": 5000,  "multiplier": 1.0},
+              {"name": "Contracts, HR, and Timekeeping", "price": 6000,  "multiplier": 1.0},
+              {"name": "Accounting", "price": 7000,  "multiplier": 1.0},
+              {"name": "Fixed Assets", "price": 4000,  "multiplier": 1.0},
+              {"name": "Card or Bank Payments", "price": 4000,  "multiplier": 1.0},
+              {"name": "PDF Invoice, Signature, Quote Generation", "price": 4000,  "multiplier": 1.0},
+              {"name": "Projects", "price": 5000,  "multiplier": 1.0},
+              {"name": "Service and Technicians", "price": 4000,  "multiplier": 1.0},
+              {"name": "Business Processes", "price": 6000,  "multiplier": 1.0},
+              {"name": "Calendar", "price": 3000,  "multiplier": 1.0},
+              {"name": "Other", "price": 0,  "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Number of Users",
+            "label": "for a team of",
+            "options": [
+              {"name": "1-5 people", "multiplier": 1.0},
+              {"name": "6-10 people", "multiplier": 1.2},
+              {"name": "11-20 people", "multiplier": 1.5},
+              {"name": "21-50 people", "multiplier": 1.8},
+              {"name": "51-100 people", "multiplier": 2.0},
+              {"name": "101+ people", "multiplier": 2.5}
+            ]
+          },
+          {
+            "name": "Integrations",
+            "label": "I also need these Integrations",
+            "options": [
+              {"name": "CRM", "multiplier": 1.2},
+              {"name": "Accounting", "multiplier": 1.2},
+              {"name": "Banking", "multiplier": 1.1},
+              {"name": "Utilities", "multiplier": 1.1},
+              {"name": "Transport", "multiplier": 1.1},
+              {"name": "Email Marketing", "multiplier": 1.2},
+              {"name": "E-commerce", "multiplier": 1.2},
+              {"name": "Social Media", "multiplier": 1.1},
+              {"name": "Project Management", "multiplier": 1.1},
+              {"name": "None", "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Data Migration",
+            "label": "where Data Migration is",
+            "options": [
+              {"name": "Required", "multiplier": 1.2},
+              {"name": "Not Required", "multiplier": 1.0}
+            ]
+          },
+        
+          {
+            "name": "Industry",
+            "label": "In the industry of",
+            "options": [
+              {"name": "Entertainment", "multiplier": 1.1},
+              {"name": "Productivity", "multiplier": 1.0},
+              {"name": "Social Media", "multiplier": 1.1},
+              {"name": "E-commerce", "multiplier": 1.2},
+              {"name": "Service", "multiplier": 1.1},
+              {"name": "Product Management", "multiplier": 1.0},
+              {"name": "Education", "multiplier": 1.0},
+              {"name": "Healthcare", "multiplier": 1.1},
+              {"name": "Hospitality", "multiplier": 1.1},
+              {"name": "Finance", "multiplier": 1.2},
+              {"name": "Retail", "multiplier": 1.1},
+              {"name": "Manufacturing", "multiplier": 1.1},
+              {"name": "Technology", "multiplier": 1.0},
+              {"name": "Real Estate", "multiplier": 1.1},
+              {"name": "Construction", "multiplier": 1.1},
+              {"name": "Automotive", "multiplier": 1.1},
+              {"name": "Telecommunications", "multiplier": 1.0},
+              {"name": "Energy", "multiplier": 1.2},
+              {"name": "Transportation", "multiplier": 1.1},
+              {"name": "Government", "multiplier": 1.0},
+              {"name": "Non-profit", "multiplier": 1.0},
+              {"name": "Other", "multiplier": 1.0}
+            ]
+          }
+        ]
+      },
+
+   "Mobile App": {
+        "category": "Mobile App",
+        "basePrice": 10000,
+        "parameters": [
+          {
+            "name": "Type",
+            "label":"that is",
+            "options": [
+              {"name": "Intern", "price": 5000,  "multiplier": 1.0},
+              {"name": "Public", "price": 8000,  "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Platforms",
+            "label":"for",
+            "options": [
+              {"name": "iOS", "price": 5000,  "multiplier": 1.0},
+              {"name": "Android", "price": 5000,  "multiplier": 1.0},
+              {"name": "Both", "price": 8000,  "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Features",
+            "label":"with these Features:",
+            "options": [
+              {"name": "Push Notifications", "price": 2000,  "multiplier": 1.0},
+              {"name": "Upload Media", "price": 1500,  "multiplier": 1.0},
+              {"name": "GPS & Maps", "price": 2000,  "multiplier": 1.0},
+              {"name": "Schedule/Calendar", "price": 1500,  "multiplier": 1.0},
+              {"name": "Register Accounts", "price": 2000,  "multiplier": 1.0},
+              {"name": "Reviews", "price": 1500,  "multiplier": 1.0},
+              {"name": "Make Payments", "price": 2000,  "multiplier": 1.0},
+              {"name": "Chat", "price": 1500,  "multiplier": 1.0},
+              {"name": "Statistics/Data", "price": 2000,  "multiplier": 1.0},
+              {"name": "Report Problems", "price": 1500,  "multiplier": 1.0},
+              {"name": "In-App Purchases", "price": 2000,  "multiplier": 1.0},
+              {"name": "Social Sharing", "price": 1500,  "multiplier": 1.0},
+              {"name": "Geolocation", "price": 2000,  "multiplier": 1.0},
+              {"name": "Offline Mode", "price": 1500,  "multiplier": 1.0},
+              {"name": "User Analytics", "price": 2000,  "multiplier": 1.0},
+              {"name": "Push Notifications", "price": 1500,  "multiplier": 1.0},
+              {"name": "Data Synchronization", "price": 2000,  "multiplier": 1.0},
+              {"name": "Multi-Language Support", "price": 1500,  "multiplier": 1.0},
+              {"name": "Augmented Reality", "price": 2000,  "multiplier": 1.0},
+              {"name": "Customizable Themes", "price": 1500,  "multiplier": 1.0},
+              {"name": "Other", "price": 0,  "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Data Migration",
+            "label":"and Data Migration or Imports is",
+            "options": [
+              {"name": "Required", "multiplier": 1.2},
+              {"name": "Not Required", "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Integrations",
+            "label":"I also need these Integrations",
+            "options": [
+              {"name": "CRM", "multiplier": 1.2},
+              {"name": "Accounting", "multiplier": 1.2},
+              {"name": "Banking", "multiplier": 1.1},
+              {"name": "Utilities", "multiplier": 1.1},
+              {"name": "Transport", "multiplier": 1.1},
+              {"name": "Email Marketing", "multiplier": 1.2},
+              {"name": "E-commerce", "multiplier": 1.2},
+              {"name": "Social Media", "multiplier": 1.1},
+              {"name": "Project Management", "multiplier": 1.1},
+              {"name": "None", "multiplier": 1.0}
+            ]
+          },
+          {
+            "name": "Industry",
+            "label": "in the industry of",
+            "options": [
+              {"name": "Entertainment", "multiplier": 1.1},
+              {"name": "Productivity", "multiplier": 1.0},
+              {"name": "Social Media", "multiplier": 1.1},
+              {"name": "E-commerce", "multiplier": 1.2},
+              {"name": "Service", "multiplier": 1.1},
+              {"name": "Product Management", "multiplier": 1.0},
+              {"name": "Education", "multiplier": 1.0},
+              {"name": "Healthcare", "multiplier": 1.1},
+              {"name": "Hospitality", "multiplier": 1.1},
+              {"name": "Finance", "multiplier": 1.2},
+              {"name": "Retail", "multiplier": 1.1},
+              {"name": "Manufacturing", "multiplier": 1.1},
+              {"name": "Technology", "multiplier": 1.0},
+              {"name": "Real Estate", "multiplier": 1.1},
+              {"name": "Construction", "multiplier": 1.1},
+              {"name": "Automotive", "multiplier": 1.1},
+              {"name": "Telecommunications", "multiplier": 1.0},
+              {"name": "Energy", "multiplier": 1.2},
+              {"name": "Transportation", "multiplier": 1.1},
+              {"name": "Government", "multiplier": 1.0},
+              {"name": "Non-profit", "multiplier": 1.0},
+              {"name": "Other", "multiplier": 1.0}
+            ]
+          }
+        ]
+      },
+
+"Product Configurator":{
+    "category": "Product Configurator",
+    "basePrice": 18000,
+    "parameters": [
+      {
+        "name": "Product Type",
+        "label": "to customize",
+        "options": [
+          {"name": "Glasses", "price": 5000,  "multiplier": 1.0},
+          {"name": "Furniture", "price": 6000,  "multiplier": 1.0},
+          {"name": "Apparel", "price": 4000,  "multiplier": 1.0},
+          {"name": "Electronics", "price": 7000,  "multiplier": 1.0},
+          {"name": "Jewelry", "price": 4000,  "multiplier": 1.0},
+          {"name": "Customizable Gifts", "price": 5000,  "multiplier": 1.0},
+          {"name": "Home Decor", "price": 5500,  "multiplier": 1.0},
+          {"name": "Automotive Parts", "price": 6000,  "multiplier": 1.0},
+          {"name": "Toys", "price": 3500,  "multiplier": 1.0},
+          {"name": "Sports Equipment", "price": 4500,  "multiplier": 1.0},
+          {"name": "Cosmetics", "price": 4000,  "multiplier": 1.0},
+          {"name": "Personalized Stationery", "price": 3500,  "multiplier": 1.0},
+          {"name": "Kitchenware", "price": 5500,  "multiplier": 1.0},
+          {"name": "Outdoor Gear", "price": 5000,  "multiplier": 1.0},
+          {"name": "Art and Craft Supplies", "price": 4000,  "multiplier": 1.0},
+          {"name": "Pet Accessories", "price": 4500,  "multiplier": 1.0},
+          {"name": "Health and Wellness Products", "price": 6000,  "multiplier": 1.0},
+          {"name": "Educational Toys and Games", "price": 3500,  "multiplier": 1.0},
+          {"name": "Office Supplies", "price": 4000,  "multiplier": 1.0},
+          {"name": "Musical Instruments", "price": 5500,  "multiplier": 1.0},
+          {"name": "Custom Packaging", "price": 5000,  "multiplier": 1.0},
+          {"name": "Party Supplies", "price": 4000,  "multiplier": 1.0},
+          {"name": "Industrial Equipment", "price": 6000,  "multiplier": 1.0},
+          {"name": "Books and Publications", "price": 3500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Product Customization",
+        "label": "with these types of Product Customizations:",
+        "options": [
+          {"name": "Color Customization", "price": 3000,  "multiplier": 1.0},
+          {"name": "Size Customization", "price": 4000,  "multiplier": 1.0},
+          {"name": "Material Customization", "price": 5000,  "multiplier": 1.0},
+          {"name": "Component Customization", "price": 6000,  "multiplier": 1.0},
+          {"name": "Logo/Brand Customization", "price": 4000,  "multiplier": 1.0},
+          {"name": "Engraving/Personalization", "price": 5000,  "multiplier": 1.0},
+          {"name": "Texture Customization", "price": 3500,  "multiplier": 1.0},
+          {"name": "Pattern Customization", "price": 3500,  "multiplier": 1.0},
+          {"name": "Shape Customization", "price": 4500,  "multiplier": 1.0},
+          {"name": "Accessories Customization", "price": 5500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Product Visualization",
+        "label": " I also need to visualize them in",
+        "options": [
+          {"name": "3D Visualization", "price": 6000,  "multiplier": 1.0},
+          {"name": "2D Visualization", "price": 4000,  "multiplier": 1.0},
+          {"name": "Image Gallery", "price": 2000,  "multiplier": 1.0},
+          {"name": "360-Degree View", "price": 5000,  "multiplier": 1.0},
+          {"name": "Virtual Reality (VR)", "price": 8000,  "multiplier": 1.0},
+          {"name": "Augmented Reality (AR)", "price": 7000,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Price Calculation",
+        "options": [
+          {"name": "Simple Price Calculation", "price": 2000,  "multiplier": 1.0},
+          {"name": "Complex Price Calculation", "price": 4000,  "multiplier": 1.0},
+          {"name": "Dynamic Pricing Rules", "price": 6000,  "multiplier": 1.0},
+          {"name": "Discounts and Promotions", "price": 4000,  "multiplier": 1.0},
+          {"name": "Bundle Pricing", "price": 5500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Industry",
+        "label": "in the industry of",
+        "options": [
+          {"name": "Entertainment", "multiplier": 1.1},
+          {"name": "Productivity", "multiplier": 1.0},
+          {"name": "Social Media", "multiplier": 1.1},
+          {"name": "E-commerce", "multiplier": 1.2},
+          {"name": "Service", "multiplier": 1.1},
+          {"name": "Product Management", "multiplier": 1.0},
+          {"name": "Education", "multiplier": 1.0},
+          {"name": "Healthcare", "multiplier": 1.1},
+          {"name": "Hospitality", "multiplier": 1.1},
+          {"name": "Finance", "multiplier": 1.2},
+          {"name": "Retail", "multiplier": 1.1},
+          {"name": "Manufacturing", "multiplier": 1.1},
+          {"name": "Technology", "multiplier": 1.0},
+          {"name": "Real Estate", "multiplier": 1.1},
+          {"name": "Construction", "multiplier": 1.1},
+          {"name": "Automotive", "multiplier": 1.1},
+          {"name": "Telecommunications", "multiplier": 1.0},
+          {"name": "Energy", "multiplier": 1.2},
+          {"name": "Transportation", "multiplier": 1.1},
+          {"name": "Government", "multiplier": 1.0},
+          {"name": "Non-profit", "multiplier": 1.0},
+          {"name": "Other", "multiplier": 1.0}
+        ]
+      }              
+    ]
+  },
+ "Web Platform": {
+    "category": "Web Platform",
+    "basePrice": 20000,
+    "parameters": [
+      {
+        "name": "Platform Type",
+        "label": "that is a",
+        "options": [
+          {"name": "Social Networking Platform", "price": 5000,  "multiplier": 1.0},
+          {"name": "E-Learning Platform", "price": 6000,  "multiplier": 1.0},
+          {"name": "Marketplace Platform", "price": 7000,  "multiplier": 1.0},
+          {"name": "Content Management System (CMS)", "price": 4000,  "multiplier": 1.0},
+          {"name": "Booking and Reservation Platform", "price": 5500,  "multiplier": 1.0},
+          {"name": "Community Forum Platform", "price": 4500,  "multiplier": 1.0},
+          {"name": "Project Management Platform", "price": 6000,  "multiplier": 1.0},
+          {"name": "Analytics and Reporting Platform", "price": 5000,  "multiplier": 1.0},
+          {"name": "Job Board Platform", "price": 4000,  "multiplier": 1.0},
+          {"name": "Customer Support Platform", "price": 5500,  "multiplier": 1.0},
+          {"name": "E-commerce Platform", "price": 7000,  "multiplier": 1.0},
+          {"name": "Data Visualization Platform", "price": 6000,  "multiplier": 1.0},
+          {"name": "Real Estate Platform", "price": 4500,  "multiplier": 1.0},
+          {"name": "Healthcare Platform", "price": 5500,  "multiplier": 1.0},
+          {"name": "Travel and Tourism Platform", "price": 5000,  "multiplier": 1.0},
+          {"name": "News and Media Platform", "price": 4000,  "multiplier": 1.0},
+          {"name": "Event Management Platform", "price": 6000,  "multiplier": 1.0},
+          {"name": "Financial Management Platform", "price": 5500,  "multiplier": 1.0},
+          {"name": "CRM and Sales Platform", "price": 5000,  "multiplier": 1.0},
+          {"name": "Other", "price": 0}
+        ]
+      },
+      {
+        "name": "User Management",
+        "label": "where users need:",
+        "options": [
+          {"name": "User Registration and Login", "price": 3000,  "multiplier": 1.0},
+          {"name": "User Roles and Permissions", "price": 4000,  "multiplier": 1.0},
+          {"name": "Social Login Integration", "price": 2000,  "multiplier": 1.0},
+          {"name": "Two-Factor Authentication", "price": 3000,  "multiplier": 1.0},
+          {"name": "User Profile Management", "price": 3500,  "multiplier": 1.0},
+          {"name": "Email Notifications", "price": 2500,  "multiplier": 1.0},
+          {"name": "Activity Logs", "price": 3000,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Design and Layout",
+        "label": "I need a design that contains:",
+        "options": [
+          {"name": "Responsive Design", "price": 3000,  "multiplier": 1.0},
+          {"name": "Customizable Templates", "price": 4000,  "multiplier": 1.0},
+          {"name": "Drag-and-Drop Interface", "price": 2000,  "multiplier": 1.0},
+          {"name": "Image and Video Galleries", "price": 3500,  "multiplier": 1.0},
+          {"name": "Custom Fonts and Typography", "price": 2500,  "multiplier": 1.0},
+          {"name": "Color Scheme Customization", "price": 3000,  "multiplier": 1.0},
+          {"name": "Page Layout Configuration", "price": 3500,  "multiplier": 1.0},
+          {"name": "Animations and Transitions", "price": 3000,  "multiplier": 1.0},
+          {"name": "Mobile-Optimized Design", "price": 4000,  "multiplier": 1.0},
+          {"name": "Integration of Branding Elements", "price": 2500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Features and Functionality",
+        "label": "and I need the following functionalities:",
+        "options": [
+          {"name": "Search Functionality", "price": 3000,  "multiplier": 1.0},
+          {"name": "Payment Gateway Integration", "price": 4000,  "multiplier": 1.0},
+          {"name": "Shopping Cart Functionality", "price": 3500,  "multiplier": 1.0},
+          {"name": "Product Catalog Management", "price": 3000,  "multiplier": 1.0},
+          {"name": "Order Management", "price": 4000,  "multiplier": 1.0},
+          {"name": "Customer Reviews and Ratings", "price": 3500,  "multiplier": 1.0},
+          {"name": "Wishlist and Favorites", "price": 3000,  "multiplier": 1.0},
+          {"name": "Product Recommendations", "price": 4000,  "multiplier": 1.0},
+          {"name": "Social Media Integration", "price": 3500,  "multiplier": 1.0},
+          {"name": "User Feedback and Surveys", "price": 3000,  "multiplier": 1.0},
+          {"name": "Live Chat Support", "price": 4000,  "multiplier": 1.0},
+          {"name": "Multi-language Support", "price": 3500,  "multiplier": 1.0},
+          {"name": "Integration with Third-Party APIs", "price": 4000,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Security and Privacy",
+        "label":"I also need to think of Security and Privacy via",
+        "options": [
+          {"name": "SSL Certificate", "price": 3000,  "multiplier": 1.0},
+          {"name": "Data Encryption", "price": 4000,  "multiplier": 1.0},
+          {"name": "User Privacy Controls", "price": 3500,  "multiplier": 1.0},
+          {"name": "Secure Payment Processing", "price": 3000,  "multiplier": 1.0},
+          {"name": "Backup and Disaster Recovery", "price": 4000,  "multiplier": 1.0},
+          {"name": "Firewall and Intrusion Detection", "price": 3500,  "multiplier": 1.0},
+          {"name": "Role-Based Access Control", "price": 3000,  "multiplier": 1.0},
+          {"name": "GDPR Compliance", "price": 4000,  "multiplier": 1.0},
+          {"name": "Data Access Logs", "price": 3500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Integration and Scalability",
+        "label":"and about Integrations and Scalability",
+        "options": [
+          {"name": "API Integration", "price": 3000,  "multiplier": 1.0},
+          {"name": "Third-Party Service Integration", "price": 4000,  "multiplier": 1.0},
+          {"name": "Database Integration", "price": 3500,  "multiplier": 1.0},
+          {"name": "Scalable Architecture", "price": 3000,  "multiplier": 1.0},
+          {"name": "Data Migration", "price": 4000,  "multiplier": 1.0},
+          {"name": "Performance Optimization", "price": 3500,  "multiplier": 1.0},
+          {"name": "Responsive API Design", "price": 3000,  "multiplier": 1.0},
+          {"name": "Load Balancing", "price": 4000,  "multiplier": 1.0},
+          {"name": "Monitoring and Analytics", "price": 3500,  "multiplier": 1.0},
+          {"name": "Other", "price": 0,  "multiplier": 1.0}
+        ]
+      }, 
+      {
+        "name": "Industry",
+        "label": "in the industry of",
+        "options": [
+          {"name": "Entertainment", "multiplier": 1.1},
+          {"name": "Productivity", "multiplier": 1.0},
+          {"name": "Social Media", "multiplier": 1.1},
+          {"name": "E-commerce", "multiplier": 1.2},
+          {"name": "Service", "multiplier": 1.1},
+          {"name": "Product Management", "multiplier": 1.0},
+          {"name": "Education", "multiplier": 1.0},
+          {"name": "Healthcare", "multiplier": 1.1},
+          {"name": "Hospitality", "multiplier": 1.1},
+          {"name": "Finance", "multiplier": 1.2},
+          {"name": "Retail", "multiplier": 1.1},
+          {"name": "Manufacturing", "multiplier": 1.1},
+          {"name": "Technology", "multiplier": 1.0},
+          {"name": "Real Estate", "multiplier": 1.1},
+          {"name": "Construction", "multiplier": 1.1},
+          {"name": "Automotive", "multiplier": 1.1},
+          {"name": "Telecommunications", "multiplier": 1.0},
+          {"name": "Energy", "multiplier": 1.2},
+          {"name": "Transportation", "multiplier": 1.1},
+          {"name": "Government", "multiplier": 1.0},
+          {"name": "Non-profit", "multiplier": 1.0},
+          {"name": "Other", "multiplier": 1.0}
+        ]
+      }]
+  },
+ "Website": {
+    "category": " Website",
+    "basePrice": 1000,
+    "parameters": [
+      {
+        "name": "Type",
+        "label":"I wish my website to be a",
+        "options": [
+          {"name": "Presentation Website", "price": 1000,  "multiplier": 1.0},
+          {"name": "Business Website", "price": 1300,  "multiplier": 1.0},
+          {"name": "Portfolio Website", "price": 800,  "multiplier": 1.0},
+          {"name": "Personal Website", "price": 500,  "multiplier": 1.0}
+        ]
+      },
+      {
+        "name": "Aesthetic",
+        "label":"and look",
+        "options": [
+          {"name": "Simple", "multiplier": 1.0},
+          {"name": "Modern", "multiplier": 1.2},
+          {"name": "Luxurious", "multiplier": 1.5}
+        ]
+      },
+      {
+        "name": "Number of Pages",
+        "label":"with around",
+        "options": [
+          {"name": "One pager", "multiplier": 1.0},
+          {"name": "1-5 pages", "multiplier": 1.2},
+          {"name": "6-10 pages", "multiplier": 1.35},
+          {"name": "11-20 pages", "multiplier": 1.5},
+          {"name": "21-50 pages", "multiplier": 1.8},
+          {"name": "51-100 pages", "multiplier": 2.3},
+          {"name": "100+ pages", "multiplier": 3.0}
+        ]
+      },
+      {
+        "name": "Industry",
+        "label": "in the industry of",
+        "options": [
+          {"name": "Entertainment", "multiplier": 1.1},
+          {"name": "Productivity", "multiplier": 1.0},
+          {"name": "Social Media", "multiplier": 1.1},
+          {"name": "E-commerce", "multiplier": 1.2},
+          {"name": "Service", "multiplier": 1.1},
+          {"name": "Product Management", "multiplier": 1.0},
+          {"name": "Education", "multiplier": 1.0},
+          {"name": "Healthcare", "multiplier": 1.1},
+          {"name": "Hospitality", "multiplier": 1.1},
+          {"name": "Finance", "multiplier": 1.2},
+          {"name": "Retail", "multiplier": 1.1},
+          {"name": "Manufacturing", "multiplier": 1.1},
+          {"name": "Technology", "multiplier": 1.0},
+          {"name": "Real Estate", "multiplier": 1.1},
+          {"name": "Construction", "multiplier": 1.1},
+          {"name": "Automotive", "multiplier": 1.1},
+          {"name": "Telecommunications", "multiplier": 1.0},
+          {"name": "Energy", "multiplier": 1.2},
+          {"name": "Transportation", "multiplier": 1.1},
+          {"name": "Government", "multiplier": 1.0},
+          {"name": "Non-profit", "multiplier": 1.0},
+          {"name": "Other", "multiplier": 1.0}
+        ]
+      }]
+  }}

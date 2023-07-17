@@ -1,0 +1,354 @@
+
+  <template>
+    <v-app>
+      <v-container>
+        <v-row>
+          <v-col cols="12" sm="3">
+  <v-select
+  v-model="selectedCategory"
+  :items="Object.keys(categories)"
+  dense
+  label="I need a/an"
+  variant="underlined"
+  required
+  ></v-select>
+</v-col>
+
+    <!-- Website -->
+
+
+          <v-col cols="12" sm="3" v-if="selectedCategory === 'Website'">
+            <v-select v-model="selectedType" :items="getParameters('Type')" label="I wish my website to be a" variant="underlined" ></v-select>
+          </v-col>
+     
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Website'">
+            <v-select v-model="selectedAesthetic" :items="getParameters('Aesthetic')" label=" and look" variant="underlined"></v-select>
+          </v-col>
+
+          <v-col cols="12" sm="2" v-if="selectedCategory === 'Website'">
+            <v-select v-model="selectedNumPages" :items="getParameters('Number of Pages')" label="with around" variant="underlined" ></v-select>
+          </v-col>
+
+          <v-col cols="12" sm="3" v-if="selectedCategory === 'Website'">
+            <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+          </v-col>
+          
+
+
+  <!-- E-Commerce Store -->
+         <v-col cols="12" sm="9" v-if="selectedCategory === 'E-commerce Store'">
+          <v-select v-model="selectedFeatures" :items="getParameters('Features')" label=" with these features:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'E-commerce Store'">
+          <v-select v-model="selectedShippingCompany" :items="getParameters('Shipping Company')" label=" for fullfilment" variant="underlined" ></v-select>
+        </v-col>
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'E-commerce Store'">
+          <v-select v-model="selectedPaymentProcessor" :items="getParameters('Payment Processor')" label=" for payments" variant="underlined" ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'E-commerce Store'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+
+        <!-- ERP -->
+        <v-col cols="12" sm="9" v-if="selectedCategory === 'ERP'">
+          <v-select v-model="selectedModules" :items="getParameters('Modules')" label=" with these modules:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'ERP'">
+          <v-select v-model="selectedNumberofUsers" :items="getParameters('Number of Users')" label="for a team of" variant="underlined" > </v-select>
+        </v-col>
+        <v-col cols="12" sm="6" v-if="selectedCategory === 'ERP'">
+          <v-select v-model="selectedIntegrations" :items="getParameters('Integrations')" label=" I also need these Integrations" variant="underlined" chips multiple ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'ERP'">
+          <v-select v-model="selectedDataMigration" :items="getParameters('Data Migration')" label=" and Data Migration is" variant="underlined" ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'ERP'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+    <!-- CRM -->
+
+        <v-col cols="12" sm="9" v-if="selectedCategory === 'CRM'">
+          <v-select v-model="selectedModules" :items="getParameters('Functionality')" label=" with these modules:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'CRM'">
+          <v-select v-model="selectedNumberofUsers" :items="getParameters('Number of Users')" label="for a team of" variant="underlined" > </v-select>
+        </v-col>
+        <v-col cols="12" sm="6" v-if="selectedCategory === 'CRM'">
+          <v-select v-model="selectedIntegrations" :items="getParameters('Integrations')" label=" I also need these Integrations" variant="underlined" chips multiple ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'CRM'">
+          <v-select v-model="selectedDataMigration" :items="getParameters('Data Migration')" label=" and Data Migration is" variant="underlined" ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'CRM'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+ <!-- Mobile App -->
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedType" :items="getParameters('Type')" label="that is" variant="underlined" > </v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedPlatform" :items="getParameters('Platforms')" label=" for" variant="underlined"></v-select>
+        </v-col>
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedFeatures" :items="getParameters('Features')" label=" with these Features:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="7" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedIntegrations" :items="getParameters('Integrations')" label=" I also need these Integrations" variant="underlined" chips multiple ></v-select>
+        </v-col>
+        <v-col cols="12" sm="3" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedDataMigration" :items="getParameters('Data Migration')" label=" and Data Migration or Imports is" variant="underlined" ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Mobile App'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+
+
+  <!-- Product Configurator -->        
+        <v-col cols="12" sm="9" v-if="selectedCategory === 'Product Configurator'">
+          <v-select v-model="selectedProductType" :items="getParameters('Product Type')" label=" to customize" variant="underlined" chips multiple></v-select>
+        </v-col>   
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'Product Configurator'">
+          <v-select v-model="selectedProductCustomization" :items="getParameters('Product Customization')" label=" with these types of Product Customizations:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'Product Configurator'">
+          <v-select v-model="selectedProductVisualization" :items="getParameters('Product Visualization')" label=" I also need to visualize them in" variant="underlined" chips multiple ></v-select>
+        </v-col>
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Product Configurator'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+
+
+<!-- Web Platform -->
+
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedProductType" :items="getParameters('Platform Type')" label="that is a" variant="underlined"  ></v-select>
+        </v-col>   
+        <v-col cols="12" sm="7" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedProductCustomization" :items="getParameters('User Management')" label="where users need:" variant="underlined" chips multiple></v-select>
+        </v-col>
+        <v-col cols="12" sm="6" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedDesign" :items="getParameters('Design and Layout')" label=" I need a design that contains:" variant="underlined" chips multiple ></v-select>
+        </v-col>
+        <v-col cols="12" sm="6" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedFeatures" :items="getParameters('Features and Functionality')" label="and I need the following functionalities:" variant="underlined" chips multiple ></v-select>
+        </v-col>
+
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedSecurity" :items="getParameters('Security and Privacy')" label="I also need to think of Security and Privacy via" variant="underlined" chips multiple ></v-select>
+        </v-col>
+
+        <v-col cols="12" sm="5" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedScalability" :items="getParameters('Features and Functionality')" label="and about Integrations and Scalability" variant="underlined" chips multiple ></v-select>
+        </v-col>
+
+        <v-col cols="12" sm="2" v-if="selectedCategory === 'Web Platform'">
+          <v-select v-model="selectedIndustry" :items="getParameters('Industry')" label="in the industry of" variant="underlined" ></v-select>
+        </v-col>
+
+        </v-row>
+
+        <v-row>
+            <v-col cols="12" sm="3">
+              <v-btn @click="submit" :disabled="!selectedCategory" prepend-icon="$vuetify" variant="tonal">Get Instant Quote</v-btn>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" sm="12">
+            <h2 v-if="quote.price"> Your quotation is between {{ quote.range.lower }} → {{ quote.range.upper }}</h2>
+          </v-col>
+
+          
+        </v-row>
+
+
+    </v-container>
+  </v-app>
+</template><script>
+import categories from './categories.json';
+
+export default {
+  data() {
+    return {
+      //categories: require('./categories.json'),
+      categories: categories,
+      selectedCategory: null,
+      selectedOptions: {},
+      selectedType: null,
+      selectedFeatures: null,
+      selectedAesthetic: null,
+      selectedNumPages: null,
+      selectedShippingCompany: null,
+      selectedPaymentProcessor: null,
+      selectedModules: [],
+      selectedNumberofUsers: null,
+      selectedIntegrations: [],
+      selectedDataMigration: null,
+      selectedIndustry: null,
+      selectedPlatform: null,
+      selectedProductCustomization: null,
+      selectedProductVisualization: null,
+      selectedProductType: null,
+      selectedSecurity: null,
+      selectedScalability: null,
+      selectedDesign: null,
+      totalPrice: null,
+      quote: {
+        price: null,
+        range: {
+          lower: null,
+          upper: null,
+        },
+      },
+    };
+  },
+  computed: {
+    categoryData() {
+    return this.categories.find(category => category.name === this.selectedCategory);
+  },
+
+  },
+  methods: {
+    getMultiplier(parameterName, selectedOption) {
+      const options = this.getParameters(parameterName);
+      const option = options.find(o => o.name === selectedOption);
+      if (!option) {
+        alert('Invalid selection for ' + parameterName);
+        return 1;
+      }
+      if (option.multiplier) {
+        return option.multiplier;
+      }
+      return 1;
+    },
+
+    getParameters(parameterName) {
+  if (this.categoryData && this.categoryData.parameters) {
+    const parameter = this.categoryData.parameters.find(param => param.name === parameterName);
+    if (parameter) {
+      return parameter.options.map(option => option.name); 
+    } 
+  }
+  return [];
+},
+//calculate price
+    calculatePrice() {
+      const category = this.categoryData;
+
+      console.log(this.selectedCategory); 
+      console.log(category);
+
+      if (!category) {
+        alert('Invalid category selected');
+        return;
+      }
+
+      let price = category.basePrice;
+      if (this.selectedCategory === 'Website') {
+        const typeOption = category.parameters.find(o => o.name === 'Type').options.find(o => o.name === this.selectedType);
+        if (!typeOption) {
+          alert('Please select a valid Type');
+          return;
+        }
+        price += typeOption.price;
+
+        const aestheticOption = category.parameters.find(o => o.name === 'Aesthetic').options.find(o => o.name === this.selectedAesthetic);
+        if (!aestheticOption) {
+          alert('Please select a valid Aesthetic');
+          return;
+        }
+        price *= aestheticOption.multiplier;
+
+        const pagesOption = category.parameters.find(o => o.name === 'Number of Pages').options.find(o => o.name === this.selectedNumPages);
+        if (!pagesOption) {
+          alert('Invalid Number of Pages selected');
+          return;
+        }
+        price *= pagesOption.multiplier;
+
+        const industryOption = category.parameters.find(o => o.name === 'Industry').options.find(o => o.name === this.selectedIndustry);
+        if (!industryOption) {
+          alert('Invalid Industry selected');
+          return;
+        }
+        price *= industryOption.multiplier;
+      } else if (this.selectedCategory === 'CRM') {
+        price += category.parameters.find(o => o.name === 'Functionality').options
+          .filter(option => this.selectedModules.includes(option.name))
+          .reduce((total, option) => total + option.price, 0);
+
+        const numUsersOption = this.getSelectedOption('Number of Users');
+        price *= numUsersOption.multiplier;
+
+        const integrationOptions = category.parameters.find(o => o.name === 'Integrations').options;
+        integrationOptions.forEach(option => {
+          if (this.selectedIntegrations.includes(option.name)) {
+            price *= option.multiplier;
+          }
+        });
+      }
+
+      const dataMigrationOption = this.getSelectedOption('Data Migration');
+      price *= dataMigrationOption.multiplier;
+
+      const industryOption = this.getSelectedOption('Industry');
+      price *= industryOption.multiplier;
+
+      this.totalPrice = price;
+    },
+
+    getSelectedOption(parameterName) {
+      const category = categories[this.selectedCategory];
+      if (category && category.parameters) {
+        const parameter = category.parameters.find(param => param.name === parameterName);
+        if (parameter) {
+          return parameter.options.find(option => option.name === this[parameterName]);
+        }
+      }
+      return null;
+    },
+
+    priceRange() {
+      const total = this.totalPrice;
+      if (total !== null) {
+        const lower = (total - 0.2 * total).toLocaleString('en-GB', {
+          style: 'currency',
+          currency: 'EUR',
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        });
+        const upper = (total + 0.2 * total).toLocaleString('en-GB', {
+          style: 'currency',
+          currency: 'EUR',
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        });
+        return { lower, upper };
+      }
+      return { lower: null, upper: null };
+    },
+
+    getQuote() {
+      this.calculatePrice();
+      const range = this.priceRange();
+      this.quote = {
+        price: this.totalPrice,
+        range,
+      };
+    },
+
+    submit() {
+      this.getQuote();
+    },
+
+    mounted() {
+      this.categories = categories.categories;
+      console.log(categories);
+    },
+  },
+};
+</script>
