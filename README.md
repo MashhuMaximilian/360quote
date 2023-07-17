@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # devwizard360
 
 ## Project setup
@@ -22,3 +23,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# 360quote
+>>>>>>> 20cb43a8db320c9cb53573bbd11b969382271239
