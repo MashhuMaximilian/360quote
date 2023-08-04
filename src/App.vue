@@ -7,10 +7,21 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+
+.v-row {
+  display: flex;
+  align-items: center;
+}
+
+
 /* Target the root element */
 .v-select {
 color: #0397FB;
 /* display: inline-block; */
+font-size: 22px;
+font-weight: 500;
+
 }
 
 
@@ -28,26 +39,28 @@ font-style: normal;
 font-weight: 500;
 }
 
-
-.mySelect::v-deep .v-field__field {
-color: #333333;
-font-family: Montserrat, sans-serif; /* Montserrat font family */  
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-text-align: center; 
-}
-
-.mySelect::v-deep .v-label {
-  color: #333333;
-}
-
 .select-container {
 align-items: center; 
 /* padding: 1em 1em 1em 1em; */
 display:flex;
+color: #333;
+font-family: Montserrat, sans-serif; /* Montserrat font family */  
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
 
+.v-btn {
+display: inline-flex;
+height: 44px;
+padding: 5px 20px 5px 20px;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #0397FB !important;
+border-color: #0397FB;
+}
 
 </style>
 
@@ -55,32 +68,37 @@ display:flex;
 
 <template>
   <v-app>
-    <v-container>
-      <v-row>
-        
-        <v-col cols="12" sm="3">
+<v-container> 
+<v-row>
+  <v-col cols="auto">
+          <span class="select-container"> I need a/an
+          </span>  
+         </v-col>
+        <v-col cols="auto"        :style="{
+  minWidth: '150px', 
+  maxWidth: '200px' 
+}">
           <v-select
             class="mySelect"
             v-model="selectedCategory"
             :items="Object.keys(categories)"
             dense
-           label="I need a/an" 
             variant="underlined"
             required
           ></v-select> 
 
         </v-col>
        
-       
-       <!--  :label=""  -->
-        <v-col   
-        :cols="getColWidth(param)" v-for="(param, index) in selectedParameters" :key="index">
-        
-        <v-row>
-          <v-col cols="4">
-          <span class="select-container"> {{getLabel(param.name)  }}  </span>  </v-col>
-      <v-col cols="8">
-      <v-select 
+        <!-- :cols="getColWidth(param)" -->
+ <v-col cols="auto" v-for="(param, index) in selectedParameters" :key="index">
+     <v-row>
+         <v-col cols="auto">
+          <span class="select-container"> {{getLabel(param.name)  }}  
+          </span>  
+         </v-col>
+         
+        <v-col cols="auto" style="text-align:center;">
+          <v-select 
           class="mySelect"
           v-model="selectedOptions[index]"
           :items="param.options"
@@ -88,13 +106,17 @@ display:flex;
           required
           :multiple="isMultipleSelect(param.name)"
           :chips="isMultipleSelect(param.name)"
-        />  </v-col>
-        </v-row> 
+          :style="{
+  minWidth: '100px',
+  maxWidth: '500px', 
+ }"
+        />
+        </v-col>
+    </v-row> 
    
 
-        </v-col>
-
-      </v-row>
+  </v-col>
+</v-row>
 
       <v-row>
         <v-col cols="12">
@@ -173,9 +195,9 @@ export default {
     },
 
 
-    getColWidth(param) {
-  return this.isMultipleSelect(param.name) ? 6 : 3;
-},
+//     getColWidth(param) {
+//   return this.isMultipleSelect(param.name) ? 8 : 3;
+// },
     calculateQuotation() {
   console.log('Calculating quotation...');
   console.log('Selected Category:', this.selectedCategory);

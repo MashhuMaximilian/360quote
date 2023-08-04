@@ -59,10 +59,10 @@
       },
       {
         "name": "Data Migration",
-        "label": "and Data Migration",
+        "label": "and Data Migration is",
         "options": [
-          {"name": "is Required", "multiplier": 1.2},
-          {"name": "is Not Required", "multiplier": 1.0}
+          {"name": "Required", "multiplier": 1.2},
+          {"name": "Not Required", "multiplier": 1.0}
         ]
       },
       {
@@ -265,10 +265,10 @@
           },
           {
             "name": "Data Migration",
-            "label": "where Data Migration",
+            "label": "where Data Migration is",
             "options": [
-              {"name": "is Required", "multiplier": 1.2},
-              {"name": "is Not Required", "multiplier": 1.0}
+              {"name": "Required", "multiplier": 1.2},
+              {"name": "Not Required", "multiplier": 1.0}
             ]
           },
         
