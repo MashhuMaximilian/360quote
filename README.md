@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# devwizard360
+# 360quote
 
 ## Project setup
 ```

@@ -24,9 +24,9 @@
           {"name": "Mobile Access", "price": 3000,  "multiplier": 1.0},
           {"name": "Social Media Integration", "price": 4000,  "multiplier": 1.0},
           {"name": "Lead Scoring", "price": 3500,  "multiplier": 1.0},
-          {"name": "Customer Segmentation", "price": 4000,  "multiplier": 1.0},
-          {"name": "Campaign Management", "price": 4500,  "multiplier": 1.0},
-          {"name": "Integration APIs", "price": 3000,  "multiplier": 1.0},
+          {"name": "Customer Segmentation", "price": 2000,  "multiplier": 1.0},
+          {"name": "Campaign Management", "price": 2500,  "multiplier": 1.0},
+          {"name": "Integration APIs", "price": 2000,  "multiplier": 1.0},
           {"name": "Other", "price": 0,  "multiplier": 1.0}
         ]
       },
@@ -59,10 +59,10 @@
       },
       {
         "name": "Data Migration",
-        "label": "and Data Migration is",
+        "label": "and Data Migration",
         "options": [
-          {"name": "Required", "multiplier": 1.2},
-          {"name": "Not Required", "multiplier": 1.0}
+          {"name": "is Required", "multiplier": 1.2},
+          {"name": "is Not Required", "multiplier": 1.0}
         ]
       },
       {
@@ -97,7 +97,7 @@
 
    "E-commerce Store": {
       "category": "E-commerce Store",
-      "basePrice": 25000,
+      "basePrice": 3000,
       "parameters": [
         {
           "name": "Features",
@@ -105,43 +105,43 @@
           "options": [
             {
               "name": "Product Catalog Management",
-              "price": 6000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Shopping Cart and Checkout",
-              "price": 7000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Payment Gateway Integration",
-              "price": 5000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Order Management",
-              "price": 6000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Inventory Management",
-              "price": 5000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Customer Accounts",
-              "price": 4000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Shipping and Logistics Integration",
-              "price": 6000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Product Reviews and Ratings",
-              "price": 3000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Discounts and Coupons",
-              "price": 4000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             },
             {
               "name": "Analytics and Reporting",
-              "price": 5000,  "multiplier": 1.0
+              "price": 500,  "multiplier": 1.0
             }
           ]
         },
@@ -161,16 +161,16 @@
           "label": "for shipping and fullfilment",
 
           "options": [
-            {"name": "I have my own fulfillment and processing solution", "price": 5000,  "multiplier": 1.0},
-            {"name": "I need help with fulfillment software", "price": 0,  "multiplier": 1.0}
+            {"name": "I have my own fulfillment and processing solution", "price": 0,  "multiplier": 1.0},
+            {"name": "I need help with fulfillment software", "price": 3000,  "multiplier": 1.0}
           ]
         },
         {
           "name": "Payment Processor",
           "label": "for payments",
           "options": [
-            {"name": "We work with a payment processor", "price": 5000,  "multiplier": 1.0},
-            {"name": "We can use your recommendations for the payment processor", "price": 0,  "multiplier": 1.0}
+            {"name": "We work with a payment processor", "price": 0,  "multiplier": 1.0},
+            {"name": "We can use your recommendations for the payment processor", "price": 3000,  "multiplier": 1.0}
           ]
         },
         {
@@ -207,32 +207,32 @@
 
     "ERP":  {
         "category": "ERP",
-        "basePrice": 30000,
+        "basePrice": 10000,
         "parameters": [
           {
             "name": "Modules",
             "label": "with these modules:",
             "options": [
-              {"name": "Stock Management", "price": 5000,  "multiplier": 1.0},
-              {"name": "Customer Management", "price": 4000,  "multiplier": 1.0},
-              {"name": "Production", "price": 6000,  "multiplier": 1.0},
-              {"name": "Pricing", "price": 4000,  "multiplier": 1.0},
+              {"name": "Stock Management", "price": 2000,  "multiplier": 1.0},
+              {"name": "Customer Management", "price": 2000,  "multiplier": 1.0},
+              {"name": "Production", "price": 3000,  "multiplier": 1.0},
+              {"name": "Pricing", "price": 1300,  "multiplier": 1.0},
               {"name": "Reports", "price": 3000,  "multiplier": 1.0},
-              {"name": "Purchasing", "price": 5000,  "multiplier": 1.0},
-              {"name": "Contracts", "price": 4000,  "multiplier": 1.0},
-              {"name": "Wholesale/Retail", "price": 4000,  "multiplier": 1.0},
-              {"name": "Inventory Management", "price": 4000,  "multiplier": 1.0},
-              {"name": "Routes and Fleets", "price": 5000,  "multiplier": 1.0},
-              {"name": "Contracts, HR, and Timekeeping", "price": 6000,  "multiplier": 1.0},
-              {"name": "Accounting", "price": 7000,  "multiplier": 1.0},
-              {"name": "Fixed Assets", "price": 4000,  "multiplier": 1.0},
-              {"name": "Card or Bank Payments", "price": 4000,  "multiplier": 1.0},
-              {"name": "PDF Invoice, Signature, Quote Generation", "price": 4000,  "multiplier": 1.0},
-              {"name": "Projects", "price": 5000,  "multiplier": 1.0},
-              {"name": "Service and Technicians", "price": 4000,  "multiplier": 1.0},
-              {"name": "Business Processes", "price": 6000,  "multiplier": 1.0},
-              {"name": "Calendar", "price": 3000,  "multiplier": 1.0},
-              {"name": "Other", "price": 0,  "multiplier": 1.0}
+              {"name": "Purchasing", "price": 2500,  "multiplier": 1.0},
+              {"name": "Contracts", "price": 3200,  "multiplier": 1.0},
+              {"name": "Wholesale/Retail", "price": 2000,  "multiplier": 1.0},
+              {"name": "Inventory Management", "price": 3000,  "multiplier": 1.0},
+              {"name": "Routes and Fleets", "price": 2000,  "multiplier": 1.0},
+              {"name": "Contracts, HR, and Timekeeping", "price": 1500,  "multiplier": 1.0},
+              {"name": "Accounting", "price": 2000,  "multiplier": 1.0},
+              {"name": "Fixed Assets", "price": 2000,  "multiplier": 1.0},
+              {"name": "Card or Bank Payments", "price": 2000,  "multiplier": 1.0},
+              {"name": "PDF Invoice, Signature, Quote Generation", "price": 3000,  "multiplier": 1.0},
+              {"name": "Projects", "price": 1000,  "multiplier": 1.0},
+              {"name": "Service and Technicians", "price": 2000,  "multiplier": 1.0},
+              {"name": "Business Processes", "price": 3000,  "multiplier": 1.0},
+              {"name": "Calendar", "price": 1000,  "multiplier": 1.0},
+              {"name": "Other", "price": 3000,  "multiplier": 1.0}
             ]
           },
           {
@@ -265,10 +265,10 @@
           },
           {
             "name": "Data Migration",
-            "label": "where Data Migration is",
+            "label": "where Data Migration",
             "options": [
-              {"name": "Required", "multiplier": 1.2},
-              {"name": "Not Required", "multiplier": 1.0}
+              {"name": "is Required", "multiplier": 1.2},
+              {"name": "is Not Required", "multiplier": 1.0}
             ]
           },
         
@@ -305,50 +305,49 @@
 
    "Mobile App": {
         "category": "Mobile App",
-        "basePrice": 10000,
+        "basePrice": 6000,
         "parameters": [
           {
             "name": "Type",
             "label":"that is",
             "options": [
-              {"name": "Intern", "price": 5000,  "multiplier": 1.0},
-              {"name": "Public", "price": 8000,  "multiplier": 1.0}
+              {"name": "Intern", "price": 2000,  "multiplier": 1.0},
+              {"name": "Public", "price": 4000,  "multiplier": 1.0}
             ]
           },
           {
             "name": "Platforms",
             "label":"for",
             "options": [
-              {"name": "iOS", "price": 5000,  "multiplier": 1.0},
-              {"name": "Android", "price": 5000,  "multiplier": 1.0},
-              {"name": "Both", "price": 8000,  "multiplier": 1.0}
+              {"name": "iOS", "price": 3000,  "multiplier": 1.0},
+              {"name": "Android", "price": 2000,  "multiplier": 1.0},
+              {"name": "Both", "price": 5000,  "multiplier": 1.0}
             ]
           },
           {
             "name": "Features",
             "label":"with these Features:",
             "options": [
-              {"name": "Push Notifications", "price": 2000,  "multiplier": 1.0},
-              {"name": "Upload Media", "price": 1500,  "multiplier": 1.0},
-              {"name": "GPS & Maps", "price": 2000,  "multiplier": 1.0},
-              {"name": "Schedule/Calendar", "price": 1500,  "multiplier": 1.0},
-              {"name": "Register Accounts", "price": 2000,  "multiplier": 1.0},
-              {"name": "Reviews", "price": 1500,  "multiplier": 1.0},
+              {"name": "Push Notifications", "price": 1000,  "multiplier": 1.0},
+              {"name": "Upload Media", "price": 700,  "multiplier": 1.0},
+              {"name": "GPS & Maps", "price": 1000,  "multiplier": 1.0},
+              {"name": "Schedule/Calendar", "price": 900,  "multiplier": 1.0},
+              {"name": "Register Accounts", "price": 900,  "multiplier": 1.0},
+              {"name": "Reviews", "price": 1000,  "multiplier": 1.0},
               {"name": "Make Payments", "price": 2000,  "multiplier": 1.0},
               {"name": "Chat", "price": 1500,  "multiplier": 1.0},
               {"name": "Statistics/Data", "price": 2000,  "multiplier": 1.0},
-              {"name": "Report Problems", "price": 1500,  "multiplier": 1.0},
+              {"name": "Report Problems", "price": 900,  "multiplier": 1.0},
               {"name": "In-App Purchases", "price": 2000,  "multiplier": 1.0},
-              {"name": "Social Sharing", "price": 1500,  "multiplier": 1.0},
-              {"name": "Geolocation", "price": 2000,  "multiplier": 1.0},
-              {"name": "Offline Mode", "price": 1500,  "multiplier": 1.0},
-              {"name": "User Analytics", "price": 2000,  "multiplier": 1.0},
+              {"name": "Social Sharing", "price": 500,  "multiplier": 1.0},
+              {"name": "Geolocation", "price": 1000,  "multiplier": 1.0},
+              {"name": "Offline Mode", "price": 2000,  "multiplier": 1.0},
+              {"name": "User Analytics", "price": 3000,  "multiplier": 1.0},
               {"name": "Push Notifications", "price": 1500,  "multiplier": 1.0},
               {"name": "Data Synchronization", "price": 2000,  "multiplier": 1.0},
-              {"name": "Multi-Language Support", "price": 1500,  "multiplier": 1.0},
-              {"name": "Augmented Reality", "price": 2000,  "multiplier": 1.0},
-              {"name": "Customizable Themes", "price": 1500,  "multiplier": 1.0},
-              {"name": "Other", "price": 0,  "multiplier": 1.0}
+              {"name": "Multi-Language Support", "price": 1000,  "multiplier": 1.0},
+              {"name": "Augmented Reality", "price": 4000,  "multiplier": 1.0},
+              {"name": "Other", "price": 4000,  "multiplier": 1.0}
             ]
           },
           {
@@ -514,7 +513,7 @@
   },
  "Web Platform": {
     "category": "Web Platform",
-    "basePrice": 20000,
+    "basePrice": 5000,
     "parameters": [
       {
         "name": "Platform Type",
@@ -546,14 +545,14 @@
         "name": "User Management",
         "label": "where users need:",
         "options": [
-          {"name": "User Registration and Login", "price": 3000,  "multiplier": 1.0},
-          {"name": "User Roles and Permissions", "price": 4000,  "multiplier": 1.0},
-          {"name": "Social Login Integration", "price": 2000,  "multiplier": 1.0},
-          {"name": "Two-Factor Authentication", "price": 3000,  "multiplier": 1.0},
+          {"name": "User Registration and Login", "price": 1000,  "multiplier": 1.0},
+          {"name": "User Roles and Permissions", "price": 2000,  "multiplier": 1.0},
+          {"name": "Social Login Integration", "price": 1000,  "multiplier": 1.0},
+          {"name": "Two-Factor Authentication", "price": 1000,  "multiplier": 1.0},
           {"name": "User Profile Management", "price": 3500,  "multiplier": 1.0},
-          {"name": "Email Notifications", "price": 2500,  "multiplier": 1.0},
-          {"name": "Activity Logs", "price": 3000,  "multiplier": 1.0},
-          {"name": "Other", "price": 0,  "multiplier": 1.0}
+          {"name": "Email Notifications", "price": 900,  "multiplier": 1.0},
+          {"name": "Activity Logs", "price": 1500,  "multiplier": 1.0},
+          {"name": "Other", "price": 3000,  "multiplier": 1.0}
         ]
       },
       {
@@ -561,52 +560,52 @@
         "label": "I need a design that contains:",
         "options": [
           {"name": "Responsive Design", "price": 3000,  "multiplier": 1.0},
-          {"name": "Customizable Templates", "price": 4000,  "multiplier": 1.0},
-          {"name": "Drag-and-Drop Interface", "price": 2000,  "multiplier": 1.0},
-          {"name": "Image and Video Galleries", "price": 3500,  "multiplier": 1.0},
+          {"name": "Customizable Templates", "price": 3000,  "multiplier": 1.0},
+          {"name": "Drag-and-Drop Interface", "price": 3000,  "multiplier": 1.0},
+          {"name": "Image and Video Galleries", "price": 1500,  "multiplier": 1.0},
           {"name": "Custom Fonts and Typography", "price": 2500,  "multiplier": 1.0},
           {"name": "Color Scheme Customization", "price": 3000,  "multiplier": 1.0},
           {"name": "Page Layout Configuration", "price": 3500,  "multiplier": 1.0},
           {"name": "Animations and Transitions", "price": 3000,  "multiplier": 1.0},
           {"name": "Mobile-Optimized Design", "price": 4000,  "multiplier": 1.0},
           {"name": "Integration of Branding Elements", "price": 2500,  "multiplier": 1.0},
-          {"name": "Other", "price": 0,  "multiplier": 1.0}
+          {"name": "Other", "price": 3000,  "multiplier": 1.0}
         ]
       },
       {
         "name": "Features and Functionality",
         "label": "and I need the following functionalities:",
         "options": [
-          {"name": "Search Functionality", "price": 3000,  "multiplier": 1.0},
-          {"name": "Payment Gateway Integration", "price": 4000,  "multiplier": 1.0},
-          {"name": "Shopping Cart Functionality", "price": 3500,  "multiplier": 1.0},
+          {"name": "Search Functionality", "price": 1000,  "multiplier": 1.0},
+          {"name": "Payment Gateway Integration", "price": 2000,  "multiplier": 1.0},
+          {"name": "Shopping Cart Functionality", "price": 1500,  "multiplier": 1.0},
           {"name": "Product Catalog Management", "price": 3000,  "multiplier": 1.0},
           {"name": "Order Management", "price": 4000,  "multiplier": 1.0},
-          {"name": "Customer Reviews and Ratings", "price": 3500,  "multiplier": 1.0},
-          {"name": "Wishlist and Favorites", "price": 3000,  "multiplier": 1.0},
-          {"name": "Product Recommendations", "price": 4000,  "multiplier": 1.0},
-          {"name": "Social Media Integration", "price": 3500,  "multiplier": 1.0},
-          {"name": "User Feedback and Surveys", "price": 3000,  "multiplier": 1.0},
-          {"name": "Live Chat Support", "price": 4000,  "multiplier": 1.0},
+          {"name": "Customer Reviews and Ratings", "price": 1500,  "multiplier": 1.0},
+          {"name": "Wishlist and Favorites", "price": 1000,  "multiplier": 1.0},
+          {"name": "Product Recommendations", "price": 1000,  "multiplier": 1.0},
+          {"name": "Social Media Integration", "price": 800,  "multiplier": 1.0},
+          {"name": "User Feedback and Surveys", "price": 1500,  "multiplier": 1.0},
+          {"name": "Live Chat Support", "price": 3000,  "multiplier": 1.0},
           {"name": "Multi-language Support", "price": 3500,  "multiplier": 1.0},
           {"name": "Integration with Third-Party APIs", "price": 4000,  "multiplier": 1.0},
-          {"name": "Other", "price": 0,  "multiplier": 1.0}
+          {"name": "Other", "price": 3000,  "multiplier": 1.0}
         ]
       },
       {
         "name": "Security and Privacy",
         "label":"I also need to think of Security and Privacy via",
         "options": [
-          {"name": "SSL Certificate", "price": 3000,  "multiplier": 1.0},
-          {"name": "Data Encryption", "price": 4000,  "multiplier": 1.0},
-          {"name": "User Privacy Controls", "price": 3500,  "multiplier": 1.0},
-          {"name": "Secure Payment Processing", "price": 3000,  "multiplier": 1.0},
-          {"name": "Backup and Disaster Recovery", "price": 4000,  "multiplier": 1.0},
+          {"name": "SSL Certificate", "price": 400,  "multiplier": 1.0},
+          {"name": "Data Encryption", "price": 800,  "multiplier": 1.0},
+          {"name": "User Privacy Controls", "price": 800,  "multiplier": 1.0},
+          {"name": "Secure Payment Processing", "price": 1000,  "multiplier": 1.0},
+          {"name": "Backup and Disaster Recovery", "price": 3000,  "multiplier": 1.0},
           {"name": "Firewall and Intrusion Detection", "price": 3500,  "multiplier": 1.0},
-          {"name": "Role-Based Access Control", "price": 3000,  "multiplier": 1.0},
-          {"name": "GDPR Compliance", "price": 4000,  "multiplier": 1.0},
+          {"name": "Role-Based Access Control", "price": 1800,  "multiplier": 1.0},
+          {"name": "GDPR Compliance", "price": 500,  "multiplier": 1.0},
           {"name": "Data Access Logs", "price": 3500,  "multiplier": 1.0},
-          {"name": "Other", "price": 0,  "multiplier": 1.0}
+          {"name": "Other", "price": 3000,  "multiplier": 1.0}
         ]
       },
       {
@@ -615,9 +614,9 @@
         "options": [
           {"name": "API Integration", "price": 3000,  "multiplier": 1.0},
           {"name": "Third-Party Service Integration", "price": 4000,  "multiplier": 1.0},
-          {"name": "Database Integration", "price": 3500,  "multiplier": 1.0},
-          {"name": "Scalable Architecture", "price": 3000,  "multiplier": 1.0},
-          {"name": "Data Migration", "price": 4000,  "multiplier": 1.0},
+          {"name": "Database Integration", "price": 2000,  "multiplier": 1.0},
+          {"name": "Scalable Architecture", "price": 2000,  "multiplier": 1.0},
+          {"name": "Data Migration", "price": 1000,  "multiplier": 1.0},
           {"name": "Performance Optimization", "price": 3500,  "multiplier": 1.0},
           {"name": "Responsive API Design", "price": 3000,  "multiplier": 1.0},
           {"name": "Load Balancing", "price": 4000,  "multiplier": 1.0},

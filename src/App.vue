@@ -1,28 +1,99 @@
+<style scoped>
+h4.title-style {
+color: #333;
+font-family: Montserrat;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/* Target the root element */
+.v-select {
+color: #0397FB;
+/* display: inline-block; */
+}
+
+
+.mySelect::v-deep .v-chip {
+display: flex;
+padding: 0.65rem;
+border-radius: 6px;
+justify-content: center;
+margin: 0px 3px 3px 0px;
+align-items: center;
+color: var(--blue-light, #0397FB);
+font-family: Montserrat, sans-serif; /* Montserrat font family */  
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+}
+
+
+.mySelect::v-deep .v-field__field {
+color: #333333;
+font-family: Montserrat, sans-serif; /* Montserrat font family */  
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+text-align: center; 
+}
+
+.mySelect::v-deep .v-label {
+  color: #333333;
+}
+
+.select-container {
+align-items: center; 
+/* padding: 1em 1em 1em 1em; */
+display:flex;
+}
+
+
+</style>
+
+
+
 <template>
   <v-app>
     <v-container>
       <v-row>
+        
         <v-col cols="12" sm="3">
           <v-select
+            class="mySelect"
             v-model="selectedCategory"
             :items="Object.keys(categories)"
             dense
-            label="I need a/an"
+           label="I need a/an" 
             variant="underlined"
             required
-          ></v-select>
+          ></v-select> 
+
         </v-col>
-        <v-col cols="12" sm="3" v-for="(param, index) in selectedParameters" :key="index">
-          <v-select
-            v-model="selectedOptions[index]"
-            :items="param.options"
-            :label="getLabel(param.name)"
-            variant="underlined"
-            required
-            :multiple="isMultipleSelect(param.name)"
-            chips
-          ></v-select>
+       
+       
+       <!--  :label=""  -->
+        <v-col   
+        :cols="getColWidth(param)" v-for="(param, index) in selectedParameters" :key="index">
+        
+        <v-row>
+          <v-col cols="4">
+          <span class="select-container"> {{getLabel(param.name)  }}  </span>  </v-col>
+      <v-col cols="8">
+      <v-select 
+          class="mySelect"
+          v-model="selectedOptions[index]"
+          :items="param.options"
+          variant="underlined"
+          required
+          :multiple="isMultipleSelect(param.name)"
+          :chips="isMultipleSelect(param.name)"
+        />  </v-col>
+        </v-row> 
+   
+
         </v-col>
+
       </v-row>
 
       <v-row>
@@ -45,6 +116,8 @@
 
 <script>
 import jsonData from './categories.json';
+
+
 
 export default {
   data() {
@@ -98,6 +171,11 @@ export default {
       ];
       return multipleSelectParameters.includes(parameterName);
     },
+
+
+    getColWidth(param) {
+  return this.isMultipleSelect(param.name) ? 6 : 3;
+},
     calculateQuotation() {
   console.log('Calculating quotation...');
   console.log('Selected Category:', this.selectedCategory);
@@ -147,7 +225,7 @@ export default {
           }
         }
       }
-    }
+    } 
 
     const lowerBound = totalPrice * 0.8;
     const upperBound = totalPrice * 1.2;
