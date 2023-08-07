@@ -62,6 +62,7 @@ background: #0397FB !important;
 border-color: #0397FB;
 }
 
+
 </style>
 
 
@@ -91,31 +92,31 @@ border-color: #0397FB;
        
         <!-- :cols="getColWidth(param)" -->
  <v-col cols="auto" v-for="(param, index) in selectedParameters" :key="index">
-     <v-row>
-         <v-col cols="auto">
-          <span class="select-container"> {{getLabel(param.name)  }}  
-          </span>  
-         </v-col>
-         
-        <v-col cols="auto" style="text-align:center;">
-          <v-select 
-          class="mySelect"
-          v-model="selectedOptions[index]"
-          :items="param.options"
-          variant="underlined"
-          required
-          :multiple="isMultipleSelect(param.name)"
-          :chips="isMultipleSelect(param.name)"
-          :style="{
-  minWidth: '100px',
-  maxWidth: '500px', 
- }"
-        />
-        </v-col>
-    </v-row> 
-   
+  <v-row v-if="shouldShowParameter[index]">
+    <v-col cols="auto">
+      <span class="select-container">
+        {{ getLabel(param.name) }}
+      </span>
+    </v-col>
 
-  </v-col>
+
+    <v-col cols="auto">
+      <v-select
+        class="mySelect"
+        v-model="selectedOptions[index]"
+        :items="param.options"
+        variant="underlined"
+        required
+        :multiple="isMultipleSelect(param.name)"
+        :chips="isMultipleSelect(param.name)"
+        :style="{ minWidth: '100px', maxWidth: '500px' }"
+      />
+    </v-col>
+  </v-row>
+</v-col>
+
+
+
 </v-row>
 
       <v-row>
@@ -149,9 +150,22 @@ export default {
       selectedOptions: [],
       selectedParameters: [],
       quotation: null,
+      currentParamIndex: 0,  
+      activeParam: 0 
       //selectedInternalCategory: null
     };
   },
+  computed: {
+  shouldShowParameter() {
+    return this.selectedParameters.map((_, index) => {
+      if (index === 0) {
+        return true; // Always show the first parameter
+      } else {
+        return this.selectedOptions[index - 1].length > 0;
+      }
+    });
+  },
+},
   watch: {
     selectedCategory(newValue) {
       if (newValue) {
@@ -164,10 +178,25 @@ export default {
       } else {
         this.selectedParameters = [];
         this.selectedOptions = [];
+
       }
+      this.resetParams(); // Call reset here
+
     },
   },
   methods: {
+    onSelect() {
+  if (this.selectedOptions[this.currentParamIndex].length > 0) {
+    this.currentParamIndex++;
+  }
+},
+
+  // Reset on category change  
+  resetParams() {
+    this.currentParamIndex = 0;
+  },
+
+
     getLabel(name) {
       if (this.selectedCategory) {
         const parameter = this.categories[this.selectedCategory].parameters.find(param => param.name === name);
@@ -275,5 +304,8 @@ export default {
 }
 
   },
+  mounted() {
+  this.currentParamIndex = 1;
+}
 };
 </script>
